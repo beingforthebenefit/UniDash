@@ -1,4 +1,5 @@
 import { Button } from '@nextui-org/react';
+import Radarr from '../components/Radarr';
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <Button color="primary" auto>
         Get Started
       </Button>
+      <Radarr radarrApiKey={process.env.RADARR_API_KEY} radarrUrl={process.env.RADARR_URL} />
     </div>
   );
 }
